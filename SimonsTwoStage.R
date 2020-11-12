@@ -40,3 +40,9 @@ getSolutions(simon = setupSimon(alpha = 0.05, beta = 0.1, p0 = 0.02, p1 = 0.2),
 getSolutions(simon = setupSimon(alpha = 0.05, beta = 0.1, p0 = 0.8, p1 = 0.95),
              useCurtailment = FALSE, curtail_All = FALSE, cut = 0,
              replications = 10000, upperBorder = 0)
+
+# Overweging t2, power = 90%, nulhypothese = 20%, alternatieve hypothese = 2%,
+# dus in termen van non-toxicity: H0 = 80%, Ha = 95%.
+getSolutions(simon = setupSimon(alpha = 0.05, beta = 0.1, p0 = 0.8, p1 = 0.98),
+             useCurtailment = FALSE, curtail_All = FALSE, cut = 0,
+             replications = 10000, upperBorder = 0)
