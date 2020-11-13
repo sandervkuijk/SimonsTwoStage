@@ -46,3 +46,24 @@ getSolutions(simon = setupSimon(alpha = 0.05, beta = 0.1, p0 = 0.8, p1 = 0.95),
 getSolutions(simon = setupSimon(alpha = 0.05, beta = 0.1, p0 = 0.8, p1 = 0.98),
              useCurtailment = FALSE, curtail_All = FALSE, cut = 0,
              replications = 10000, upperBorder = 0)
+
+# install.packages("gsDesign")
+library(gsDesign)
+
+# # alpha is one-sided!
+# st <- gsDesign(k = 2, test.type = 1, alpha = 0.05, beta = 0.1, timing = c(1/3, 1),
+#                sfu = "Pocock")
+# st
+
+# Pocock boundary = 0.0294 bij tweemaal testen
+
+binom.test(3, 11, p = 0.10, alternative = c("greater"), conf.level = 0.95)
+3/11
+4/11
+
+binom.test(6, 11, p = 0.20, alternative = c("greater"), conf.level = 0.95)
+5/11
+6/11
+
+binom.test(7, 33, p = 0.10, alternative = c("greater"), conf.level = 0.95)
+7/33
