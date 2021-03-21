@@ -1,3 +1,9 @@
+################################################################################
+### Sample size calculations
+### Git version controlled
+### Sander van Kuijk, 2020/2021
+
+
 # install.packages("OneArmPhaseTwoStudy")
 library(OneArmPhaseTwoStudy)
 
