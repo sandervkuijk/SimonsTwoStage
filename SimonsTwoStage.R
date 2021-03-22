@@ -2,9 +2,25 @@
 ### Sample size calculations
 ### Git version controlled
 ### Sander van Kuijk, 2020/2021
+# R version 4.0.4 (2021-02-15)
+# Platform: x86_64-w64-mingw32/x64 (64-bit)
+# Running under: Windows 10 x64 (build 18363)
 
+# locale:
+# [1] LC_COLLATE=English_Netherlands.1252  LC_CTYPE=English_Netherlands.1252
+# [3] LC_MONETARY=English_Netherlands.1252 LC_NUMERIC=C
+# [5] LC_TIME=English_Netherlands.1252
 
-# install.packages("OneArmPhaseTwoStudy")
+# attached base packages:
+# [1] stats     graphics  grDevices utils     datasets  methods   base
+
+# other attached packages:
+# [1] OneArmPhaseTwoStudy_1.0.3 Rcpp_1.0.6
+
+# loaded via a namespace (and not attached):
+# [1] compiler_4.0.4   tools_4.0.4      codetools_0.2-18
+
+#  install.packages("OneArmPhaseTwoStudy", repos = "https://ftp.belnet.be/mirror/CRAN/")
 library(OneArmPhaseTwoStudy)
 
 # Overweging 1, originele berekening Gerard Bos via website
@@ -73,3 +89,5 @@ binom.test(6, 11, p = 0.20, alternative = c("greater"), conf.level = 0.95)
 
 binom.test(7, 33, p = 0.10, alternative = c("greater"), conf.level = 0.95)
 7/33
+
+### end
